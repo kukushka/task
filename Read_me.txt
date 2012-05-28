@@ -1,0 +1,3 @@
+
+
+At the field "beginning" and "end" for "x" è "y"  you can enter the coordinates of the appropriate beginning and end of creating lines with the number, printed at the field "enter the number of line". After pushing the button "draw a line" the line apears in  the window. So, enter lines  you want so far: that way you will create 2d figure. If you enter at the field above the button  "delete line" a number of existing line and push this button, the line with entered number would be erased. If you push the button "rotate ->", the figure would rotate in clockwise direction, and with "rotate ->" vice versa. Pushing the button "Clear all", obviously, clears the window, the figure doesn't exist after that.
