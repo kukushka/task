@@ -1,0 +1,3 @@
+
+
+At the field "beginning" and "end" for "x" è "y"   enter the coordinates of creating lines with the number, printed at the field "enter the number of line". After pushing the button "draw a line" the line apears in  the window. If you enter at the field above the button  "delete line" a number of existing line and push this button, the line with entered number would be erased. enter the angle in degrees, If you push the button "rotate ->", the figure would rotate in clockwise direction at this angle, and with "rotate ->" vice versa. "Clear all" vanish all figure.

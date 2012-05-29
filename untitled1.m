@@ -462,12 +462,14 @@ global lines;
 global numb;
 plot(0, 0,'parent',handles.axes1, 'color','white');
 %удалила старое положение
+teta=str2double(get(handles.edit7,'String'));%ввели номер линии
+rad=(2*pi*teta)/360;
 for j=1:N
     [x, y]=lines{j}.draw();
     plot(x, y, 'parent',handles.axes1, 'color', 'white');
     text((lines{j}.x0+lines{j}.xn)*0.5,(lines{j}.y0+lines{j}.yn)*0.5,int2str(j), 'color', 'white');
     hold on;
-    [x, y, lines{j}]=lines{j}.rotate(pi/2);   
+    [x, y, lines{j}]=lines{j}.rotate(rad);   
     if (numb(j)~=0)
     plot(x, y, 'parent',handles.axes1);
     text((lines{j}.x0+lines{j}.xn)*0.5,(lines{j}.y0+lines{j}.yn)*0.5,num2str(j));
@@ -490,12 +492,14 @@ global lines;
 global N;
 global numb;
 plot(0, 0,'parent',handles.axes1, 'color','white');% очистили экран
+teta=str2double(get(handles.edit7,'String'));%ввели номер линии
+rad=(2*pi*teta)/360;
  for j=1:N
     [x, y]=lines{j}.draw();
     plot(x, y, 'parent',handles.axes1, 'color', 'white');
     text((lines{j}.x0+lines{j}.xn)*0.5,(lines{j}.y0+lines{j}.yn)*0.5,int2str(j), 'color', 'white');
     hold on; 
-    [x, y, lines{j}]=lines{j}.rotate(-pi/2);   
+    [x, y, lines{j}]=lines{j}.rotate(-rad);   
        if (numb(j)~=0)
     plot(x, y, 'parent',handles.axes1);
     text((lines{j}.x0+lines{j}.xn)*0.5,(lines{j}.y0+lines{j}.yn)*0.5,num2str(j));
